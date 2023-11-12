@@ -17,4 +17,19 @@ fun main() {
      */
     // Buat di bawah sini
 
+    var score = 80
+    var result = ""
+    if (score >= 90){
+        result = "Selamat! Anda mendapatkan nilai A."
+    } else if (score in 80..89 ){
+        result = "Anda mendapatkan nilai B."
+    } else if (score in 70..79){
+        result = "Anda mendapatkan nilai C."
+    } else if (score in 60..69){
+        result = "Anda mendapatkan nilai D."
+    } else if (score < 60){
+        result = "Anda mendapatkan nilai E."
+    }
+
+    println(result)
 }

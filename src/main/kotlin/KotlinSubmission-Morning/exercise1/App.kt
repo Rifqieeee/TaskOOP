@@ -11,6 +11,15 @@ Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
 
+    val firstName = "Rifqi"
+    val lastName = "Nugraha"
+    val age = 20
+    val single = true
+
+    println("Name : ${firstName + lastName}")
+    println("Age : $age years")
+    if (single) println("Status : Single")
+    else println("Status : Married")
 }
 
 
@@ -19,7 +28,7 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return ""
+    return println("Name : $groupId\nMember : $groupMember\nSession : $session")
 }
 
 /**
@@ -29,8 +38,20 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val members = listOf(
+        "Nurul Fatma Putri Lazira",
+        "Rifqi Nugraha",
+        "Fatimatuzzahra",
+        "Fikry Azraq",
+        "Rayhan Ilyas",
+        "Adzhimmatinur Azzahra",
+        "Ikram Jundulloh",
+        "Febri",
+        "Cahya Kelvin",
+        "Astrid",
+        "Raynaldi"
+    )
+    return members.filter { it == "Rifqi Nugraha"}
 }
 
 /**
@@ -41,10 +62,22 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf("Shania", "Kelvin", "Iffan")
+    val countOfGroup = arrayOf(
+        "Nurul Fatma Putri Lazira",
+        "Rifqi Nugraha",
+        "Fatimatuzzahra",
+        "Fikry Azraq Arista",
+        "Rayhan Ilyas",
+        "Adzhimmatinur Azzahra",
+        "Ikram Jundulloh",
+        "Febri",
+        "Cahya Kelvin",
+        "Astrid",
+        "Raynaldi"
+    )
 
-    return 0
+    return mentor.size + countOfGroup.size
 }
 
 fun main() {
@@ -62,6 +95,20 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail(
+        groupId = "Orion",
+        groupMember = listOf(
+            "Nurul Fatma Putri Lazira",
+            "Rifqi Nugraha",
+            "Fatimatuzzahra",
+            "Fikry Azraq",
+            "Rayhan Ilyas",
+            "Adzhimmatinur Azzahra",
+            "Ikram Jundulloh",
+            "Febri",
+            "Cahya Kelvin",
+            "Astrid",
+            "Raynaldi"
+        ), session = "Morning")
 
 }

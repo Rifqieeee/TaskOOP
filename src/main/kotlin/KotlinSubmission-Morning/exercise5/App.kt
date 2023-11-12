@@ -1,5 +1,7 @@
 package id.infinitelearning.KotlinSubmission.exercise5
 
+import javax.lang.model.element.Name
+
 fun main() {
 
     /**
@@ -8,14 +10,14 @@ fun main() {
      *
      */
 
-
+    val hero = Hero()
     /**
      * Latihan 2
      * Set data profile dengan memanggil fungsi setProfile() dibawah ini
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
-
+    hero.setProfile("Rifqi Nugraha", 20, 163)
 
 
     /**
@@ -23,8 +25,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
-
+    hero.profile()
 
     /**
     Challenge:
@@ -66,6 +67,38 @@ fun main() {
      *
      */
 
+//    Orion -> jalan 5x, lari 4x, makan 4x, minum 4x, lompat 3x, duduk 2x
+
+
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+
+    hero.lari()
+    hero.lari()
+    hero.lari()
+    hero.lari()
+
+    hero.makan()
+    hero.makan()
+    hero.makan()
+    hero.makan()
+
+    hero.minum()
+    hero.minum()
+    hero.minum()
+    hero.minum()
+
+    hero.lompat()
+    hero.lompat()
+    hero.lompat()
+
+    hero.duduk()
+    hero.duduk()
+
+
 
 
     /**
@@ -74,6 +107,6 @@ fun main() {
      *
      */
 
-
+    hero.profile()
 
 }
